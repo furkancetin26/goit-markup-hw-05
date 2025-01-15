@@ -103,14 +103,6 @@ p {
   letter-spacing: 0.02em;
   color: #434455;
 }
-input::placeholder {
-  font-family: "Roboto", sans-serif;
-  font-weight: Regular;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.02em;
-  color: white;
-}
 .first-row {
   display: flex;
   flex-wrap: wrap;
@@ -427,7 +419,7 @@ footer .email-input{
 footer .subscribe-button{
   min-width: 165px;
   height: 40px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
