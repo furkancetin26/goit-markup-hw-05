@@ -536,7 +536,7 @@ footer button .icons-svg{
   border: 1px solid rgba(77, 47, 229, 1);
 }
 .modal .modal-design .input-group:focus-within svg{
-  color: rgba(77, 47, 229, 1);
+  fill: rgba(77, 47, 229, 1);
 }
 label{
 display: block;
