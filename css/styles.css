@@ -515,6 +515,10 @@ footer button .icons-svg{
   height: 40px;
   display: flex;
   align-items: center;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .modal .modal-design .input-group{
