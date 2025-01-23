@@ -479,7 +479,7 @@
 
         <form action="contact.php ">
           <div class="input-group">
-            <label for="user-name" class="name">Name</label>
+            <label for="user-name" class="label">Name</label>
             <div class="input-svg">
               <input
                 type="text"
@@ -493,7 +493,7 @@
             </div>
           </div>
           <div class="input-group">
-            <label for="user-name" class="name">Phone</label>
+            <label for="user-name" class="label">Phone</label>
             <div class="input-svg">
               <input
                 type="text"
@@ -507,7 +507,7 @@
             </div>
           </div>
           <div class="input-group">
-            <label for="user-name" class="name">Email</label>
+            <label for="user-name" class="label">Email</label>
             <div class="input-svg">
               <input
                 type="text"
@@ -521,11 +521,12 @@
             </div>
           </div>
           <div class="input-group">
-            <label for="user-comment">Comment</label>
+            <label for="user-comment" class="label">Comment</label>
             <textarea
-              name="textarea"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
+              class="textarea"
             ></textarea>
           </div>
 
@@ -538,10 +539,14 @@
               class="privacy visually-hidden"
             />
             <label for="user-privacy" class="privacy"
+              ><span class="check"
+                ><svg width="10" height="8" class="icons-svg">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
               >I accept the terms and conditions of the
               <a href="" class="privacy-link">Privacy Policy</a></label
             >
           </div>
+          <button class="send">SEND</button>
         </form>
       </div>
       <div class="overlay"></div>
