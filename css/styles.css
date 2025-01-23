@@ -508,7 +508,7 @@ footer button .icons-svg{
   letter-spacing: 0.04em;
   margin-bottom: 4px;
 }
-.modal .modal-design input{
+.modal .modal-design .input-group input{
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 100%;
@@ -522,8 +522,14 @@ footer button .icons-svg{
   
 }
 .modal .modal-design .input-group{
-  position:relative;
   
+  margin-bottom: 8px;
+}
+.modal .modal-design .input-group:nth-child(4){
+  margin-bottom: 16px;
+}
+.modal .modal-design .input-group .input-svg{
+  position: relative;
 }
 .modal .modal-design input:focus{
   border-color: #4D5AE5;
@@ -536,7 +542,7 @@ footer button .icons-svg{
   transform: translateY(-50%);  
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.modal .modal-design .input-group .input-svg input:focus svg{
+.modal .modal-design .input-group .input-svg input:focus + svg{
   fill: #4D5AE5;
 }
 label{
@@ -552,13 +558,31 @@ textarea{
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
+  background-color: transparent;
+  outline: transparent;
 }
-textarea:focus-within{
-  outline: none;
-  border: 1px solid rgba(77, 47, 229, 1);
+textarea:focus{
+  border-color: #4D5AE5;
 }
 textarea::placeholder{
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
+}
+input[type="checkbox"] {
+  appearance: none; /* Varsayılan görünümü kaldır */
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.privacy input[type="checkbox"]:checked{
+  background-color: #404bbf;
+  border: none;
+  fill: #F4F4FD;
 }

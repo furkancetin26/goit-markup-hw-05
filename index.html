@@ -520,12 +520,14 @@
               </svg>
             </div>
           </div>
-          <label for="user-comment">Comment</label>
-          <textarea
-            name="textarea"
-            id="user-comment"
-            placeholder="Text input"
-          ></textarea>
+          <div class="input-group">
+            <label for="user-comment">Comment</label>
+            <textarea
+              name="textarea"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
           <div class="privacy">
             <input
@@ -533,11 +535,11 @@
               name="user-privacy"
               id="user-privacy"
               value="true"
-              class="privacy"
+              class="privacy visually-hidden"
             />
             <label for="user-privacy" class="privacy"
               >I accept the terms and conditions of the
-              <span class="privacy-link">Privacy Policy</span></label
+              <a href="" class="privacy-link">Privacy Policy</a></label
             >
           </div>
         </form>
